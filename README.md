@@ -14,6 +14,6 @@ It is possible for multiple keys to calculate to the same value and be stored in
 To avoid or minimize collisions, you would want a sufficiently large hash table to hold the data, and a sufficiently complex hash function to generate unique hashes for keys.
 
 ### Hash table PROS
-In general, the big 0 notation for hash table lookup/runtime is 0(1), because you are able to go directly to correct index thanks to the hash function. It is possible for runtime to become 0(N) in the case of a bucket containing multiple entries, where you first lookup the correct bucket and then have to iterate through its contents.
+In general, the big 0 notation for hash table lookup/runtime is 0(1) (constant time), because you are able to go directly to correct index thanks to the hash function. It is possible for runtime to become 0(N) (linear time) in the case of a bucket containing multiple entries, where you first lookup the correct bucket and then have to iterate through its contents.
 
 ### Hash table CONS
