@@ -47,34 +47,16 @@ let HashTable = function(){
     }
 }
 
-// class HashTable {
-//     constructor(){
-//         this.size = 27
-//         this.buckets = Array(this.size)
-
-//         for (let i = 0; i<this.buckets.length; i++){
-//             this.buckets[i] = new Map()
-//         }
-//     }
-
-//     insert(key, value){
-//         let idx = hash(key, this.size)
-//         this.buckets[idx].set(key, value)
-//     }
-
-//     search(key){
-//         let idx = hash(key, this.size)
-//         return this.buckets[idx].get(key, value)
-//     }
-// }
-
 let checkRepeats = (arr) =>{
     let repeat = 'no repeat'
     for(i=0; i<arr.length; i++){
-        if (arr[i].length > 1){
+        if (arr[i] === undefined) {
+            next
+        } else if (arr[i].length > 1){
             repeat = 'repeated'
-        } else {return repeat}
+        }
     }
+    console.log(repeat)
     return repeat
 }
 
@@ -89,3 +71,5 @@ let isUnique = (str) => {
 }
 
 isUnique(string1)
+isUnique(string2)
+isUnique(string3)
