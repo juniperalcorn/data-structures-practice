@@ -2,6 +2,9 @@
 
 This repository contains practice code from tutorial code-alongs and exercises. The appropriate folder will contain labeled examples/practice. I will update this README with high-level notes on the data structures I consider.
 
+#### notes
+To view, clone this repository and cd into the appropriate folder. Run ```node filename.js```
+
 ## Hash Tables
 Hash tables create associative arrays: they store data in key/value pairs for efficient lookup. The overall hash table is an array with a set length, and the key/value pairs are stored as single arrays or objects at set indices in the array, also called "buckets".
 
