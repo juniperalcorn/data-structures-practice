@@ -16,7 +16,19 @@ It is possible for multiple keys to calculate to the same value and be stored in
 
 To avoid or minimize collisions, you would want a sufficiently large hash table to hold the data, and a sufficiently complex hash function to generate unique hashes for keys.
 
-### Hash table PROS
+#### Hash table PROS
 In general, the big 0 notation for hash table lookup/runtime is 0(1) (constant time), because you are able to go directly to correct index thanks to the hash function. It is possible for runtime to become 0(N) (linear time) in the case of a bucket containing multiple entries, where you first lookup the correct bucket and then have to iterate through its contents.
 
-### Hash table CONS
+#### Hash table CONS
+
+## Linked Lists
+
+There can be singly linked lists, and doubly linked lists. Linked lists are a linear data structure where information is stored in nodes, and a pointer which points to either the next node in the list (singly linked list) or to the next node and the previous node (doubly linked list). The nodes on the list do not have indices, and in fact we keep track only of the first node (the header or vertex), the last node (the tail), and the overall length of the list. To get to a particular node in the list, you must traverse every element of the list to find what you're looking for.
+
+### Singly Linked Lists
+
+### Doubly Linked Lists
+
+#### Linked List PROS
+
+#### Linked List CONS
