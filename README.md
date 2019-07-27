@@ -22,13 +22,20 @@ In general, the big 0 notation for hash table lookup/runtime is 0(1) (constant t
 #### Hash table CONS
 
 ## Linked Lists
-
+sequential access versus direct access (array)
 There can be singly linked lists, and doubly linked lists. Linked lists are a linear data structure where information is stored in nodes, and a pointer which points to either the next node in the list (singly linked list) or to the next node and the previous node (doubly linked list). The nodes on the list do not have indices, and in fact we keep track only of the first node (the header or vertex), the last node (the tail), and the overall length of the list. To get to a particular node in the list, you must traverse every element of the list to find what you're looking for.
 
 ### Singly Linked Lists
 
 ### Doubly Linked Lists
+These take up more memory than singly linked lists given the additional pointer to the previous node, but offer more flexibility in searching. Searching is faster--O(2/n), but searching still simplifies to O(n).
+
+Browser history is often represented by a doubly linked list.
 
 #### Linked List PROS
+Excel at insertion and deletion Big O times compared to arrays.
+
+New nodes utilize memory efficiently, because elements are not stored in a contiguous block (array).
 
 #### Linked List CONS
+Random access/searches take O(n) time because there is no indexing and you must traverse the whole list in order (singly linked list) or use binary search to traverse half the list (doubly linked list).
