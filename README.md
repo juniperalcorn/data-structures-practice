@@ -47,8 +47,11 @@ The call stack is an example of the stack data structure. Stacks manage function
 JavaScript does not come with its own built-in stack data type. You can use an array to create a stack, and use only push() and pop() to manipulate the end of the array (no insertion or shifting!).
 
 ### Stacks PROS and CONS
-Pros: insertion and removal have O(1).
+Pros: insertion and removal have O(1). If you need searching and access, not the right data structure.
 
 ## Queues
 
 FIFO data structure: first in, first out (like a ticket line!). Queue structures are utilized sometimes for uploads and downloads, but always for printing; they are utilized for gaming queues.
+
+### Queues PROS and CONS
+Pros: insertation and removal have O(1), using a linked list. If you need searching and access, not the right data structure. Keeps track of and maintains order.
