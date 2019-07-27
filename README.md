@@ -39,3 +39,15 @@ New nodes utilize memory efficiently, because elements are not stored in a conti
 
 #### Linked List CONS
 Random access/searches take O(n) time because there is no indexing and you must traverse the whole list in order (singly linked list) or use binary search to traverse half the list (doubly linked list).
+
+## Stacks
+
+LIFO data structure: last in, first out (like a stack of books, papers, plates, laundry) etc.
+
+The call stack is an example of the stack data structure. Stacks manage function invocations. Undo/redo is a stack structure.
+
+JavaScript does not come with its own built-in stack data type. You can use an array to create a stack, and use only push() and pop() to manipulate the end of the array (no insertion or shiftin!).
+
+## Queues
+
+FIFO data structure: first in, first out (like a ticket line!).
