@@ -16,10 +16,8 @@ It is possible for multiple keys to calculate to the same value and be stored in
 
 To avoid or minimize collisions, you would want a sufficiently large hash table to hold the data, and a sufficiently complex hash function to generate unique hashes for keys.
 
-#### Hash table PROS
-In general, the big 0 notation for hash table lookup/runtime is 0(1) (constant time), because you are able to go directly to correct index thanks to the hash function. It is possible for runtime to become 0(N) (linear time) in the case of a bucket containing multiple entries, where you first lookup the correct bucket and then have to iterate through its contents.
-
-#### Hash table CONS
+#### Hash table PROS and CONS
+Pros: In general, the big 0 notation for hash table lookup/runtime is 0(1) (constant time), because you are able to go directly to correct index thanks to the hash function. It is possible for runtime to become 0(N) (linear time) in the case of a bucket containing multiple entries, where you first lookup the correct bucket and then have to iterate through its contents.
 
 ## Linked Lists
 sequential access versus direct access (array)
@@ -32,13 +30,13 @@ These take up more memory than singly linked lists given the additional pointer 
 
 Browser history is often represented by a doubly linked list.
 
-#### Linked List PROS
-Excel at insertion and deletion Big O times compared to arrays.
+#### Linked List PROS and CONS
+Pros: Excel at insertion and deletion Big O times compared to arrays.
 
 New nodes utilize memory efficiently, because elements are not stored in a contiguous block (array).
 
-#### Linked List CONS
-Random access/searches take O(n) time because there is no indexing and you must traverse the whole list in order (singly linked list) or use binary search to traverse half the list (doubly linked list).
+
+Cons: Random access/searches take O(n) time because there is no indexing and you must traverse the whole list in order (singly linked list) or use binary search to traverse half the list (doubly linked list).
 
 ## Stacks
 
@@ -46,8 +44,11 @@ LIFO data structure: last in, first out (like a stack of books, papers, plates, 
 
 The call stack is an example of the stack data structure. Stacks manage function invocations. Undo/redo is a stack structure.
 
-JavaScript does not come with its own built-in stack data type. You can use an array to create a stack, and use only push() and pop() to manipulate the end of the array (no insertion or shiftin!).
+JavaScript does not come with its own built-in stack data type. You can use an array to create a stack, and use only push() and pop() to manipulate the end of the array (no insertion or shifting!).
+
+### Stacks PROS and CONS
+Pros: insertion and removal have O(1).
 
 ## Queues
 
-FIFO data structure: first in, first out (like a ticket line!).
+FIFO data structure: first in, first out (like a ticket line!). Queue structures are utilized sometimes for uploads and downloads, but always for printing; they are utilized for gaming queues.
