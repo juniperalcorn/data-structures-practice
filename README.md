@@ -55,3 +55,33 @@ FIFO data structure: first in, first out (like a ticket line!). Queue structures
 
 ### Queues PROS and CONS
 Pros: insertation and removal have O(1), using a linked list. If you need searching and access, not the right data structure. Keeps track of and maintains order.
+
+## Trees
+A single root node points to one or more other nodes, its child nodes. Each child node then branches off into 0 or more nodes. 
+
+Characteristics:
+- Trees must have a single start point, the root. 
+- All nodes have to point away from the root. 
+- Nodes can only point to children (not to parents, or siblings). 
+- Trees are nonlinear.
+
+Terminology:
+- Siblings are a group of nodes with the same parent 
+- A leaf is a node with no children. 
+- The connection between nodes is called an "edge".
+
+Use cases:
+- HTML DOM
+- Network routing
+- Abstract syntax trees (describing the syntax of a programming language using a tree structure)
+- AI
+- - mini/max tree
+- - decision tree
+- Folders in an operating system
+- JSON
+
+### Binary Trees
+Each node can have at most 2 children. 
+
+### Binary Search Trees
+Each node can have at most 2 children, and data is sorted. If we take any node on the tree, any child node to the left is smaller, any child node to the right is larger.
