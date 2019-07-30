@@ -81,7 +81,7 @@ class BinarySearchTree {
         
         return visited
     }
-
+    //DFS Pre Order
     pre(){
         let visited = []
         let current = this.root
@@ -95,6 +95,21 @@ class BinarySearchTree {
         visit(current)
         return visited
     }
+    //DFS PostOrder
+    post(){
+        let visited = []
+        let current = this.root
+
+        function traverse(node){
+            if (node.left) traverse(node.left)
+            if (node.right) traverse(node.right)
+
+            visited.push(node.val)
+        }
+        traverse(current)
+        return visited
+    }
+
 }
 
 //populate tree
@@ -112,4 +127,4 @@ tree.insert(19)
 tree.insert(22)
 tree.insert(72)
 
-console.log(tree.pre())
+console.log(tree.post())
