@@ -85,3 +85,5 @@ Each node can have at most 2 children.
 
 ### Binary Search Trees
 Each node can have at most 2 children, and data is sorted. If we take any node on the tree, any child node to the left is smaller, any child node to the right is larger.
+
+In general, the Big O for insertion or searching in a binary search tree is O(log n).
