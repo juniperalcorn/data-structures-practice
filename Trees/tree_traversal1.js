@@ -63,7 +63,7 @@ class BinarySearchTree {
         } 
         return false
     }
-
+// breadth first search
     BFS(){
         let q = []
         let visited = []
@@ -79,6 +79,20 @@ class BinarySearchTree {
             if (node.right) q.push(node.right)
         }
         
+        return visited
+    }
+
+    pre(){
+        let visited = []
+        let current = this.root
+
+        function visit(node){
+            visited.push(node.val)
+            if (node.left) visit(node.left)
+            if (node.right) visit(node.right)
+        }
+
+        visit(current)
         return visited
     }
 }
@@ -98,4 +112,4 @@ tree.insert(19)
 tree.insert(22)
 tree.insert(72)
 
-console.log(tree.BFS())
+console.log(tree.pre())
