@@ -110,6 +110,20 @@ class BinarySearchTree {
         return visited
     }
 
+    //DFS in order
+    order(){
+        let visited = []
+        let current = this.root
+
+        function traverse(node){
+            if (node.left) traverse(node.left)
+            visited.push(node.val)
+            if (node.right) traverse(node.right)
+        }
+        traverse(current)
+        return visited
+    }
+
 }
 
 //populate tree
@@ -127,4 +141,4 @@ tree.insert(19)
 tree.insert(22)
 tree.insert(72)
 
-console.log(tree.post())
+console.log(tree.order())
