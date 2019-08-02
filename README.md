@@ -57,7 +57,7 @@ FIFO data structure: first in, first out (like a ticket line!). Queue structures
 Pros: insertation and removal have O(1), using a linked list. If you need searching and access, not the right data structure. Keeps track of and maintains order.
 
 ## Trees
-A single root node points to one or more other nodes, its child nodes. Each child node then branches off into 0 or more nodes. 
+A single root node points to one or more other nodes, its child nodes. Each child node then branches off into 0 or more nodes. Trees are hierarchical, as opposed to linear, data structures.
 
 Characteristics:
 - Trees must have a single start point, the root. 
@@ -82,6 +82,10 @@ Use cases:
 
 ### Binary Trees
 Each node can have at most 2 children. 
+
+Balanced binary trees have roughly the same number of nodes on each side, and perfect trees have the same number of nodes on each side (these are rare).
+
+A type of very unbalanced binary tree is a "degenerate" tree, which is essentially a linked list. Linked Lists are a type of tree!
 
 ### Binary Search Trees
 Each node can have at most 2 children, and data is sorted. If we take any node on the tree, any child node to the left is smaller, any child node to the right is larger.
