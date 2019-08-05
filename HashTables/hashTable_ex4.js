@@ -62,6 +62,31 @@ class HashTable {
         } 
         return undefined
     }
+    keys(){
+        let keys = []
+        for (let i = 0; i<this.keyMap.length; i++){
+            if (this.keyMap[i]){
+                for (let j = 0; j<this.keyMap[i].length; j++){
+                    keys.push(this.keyMap[i][j][0])
+                }
+            } 
+        }
+        return keys
+    }
+    //handling duplicates
+    values(){
+        let vals = []
+        for (let i=0; i<this.keyMap.length; i++){
+            if(this.keyMap[i]){
+                for (let j = 0; j<this.keyMap[i].length; j++){
+                    if(!vals.includes(this.keyMap[i][j][1])){
+                        vals.push(this.keyMap[i][j][1])
+                    } 
+                }
+            }
+        }
+        return vals
+    }
 }
 
 let ht = new HashTable
@@ -69,5 +94,8 @@ ht.set('hello world', 'goodbye')
 ht.set('why me', 'its okay')
 ht.set('almost', 'paradise')
 ht.set('knocking on', 'heavens door')
+ht.set('were knocking on', 'heavens door')
 console.log(ht)
 console.log(ht.get('almost'))
+console.log(ht.keys())
+console.log(ht.values())
